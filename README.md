@@ -12,15 +12,10 @@ Valine Admin 项目是一个对 [Valine](https://valine.js.org) 评论系统的�
 ![代码库](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/img/20200207142608.png)
 4. 设置`自定义环境变量`，需要设置云引擎的环境变量以提供必要的信息，变量参数参考下面的`配置项`
 ![自定义环境变量](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/img/20200207155409.png)
-5. 点击 `云引擎 -> 部署`，选择`Git源码部署`，分支或版本号输入`master`，下载最新依赖（可选），部署
-![Git](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/img/20200207143035.png)
-![master](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/img/20200207143205.png)
-
 **配置项**
-<div class="table-wrap">
 
 变量 | 示例 | 说明
---- | ------ | ------
+--- | ------ |:-----
 SITE_NAME | HONGWEI'S Blog | [必填] 网站名称
 SITE_URL  | https://www.zhwei.cn| [必填] 网站地址，**最后不要加 `/`**
 SMTP_SERVICE | QQ | [必填] 邮件服务提供商，支持 QQ、163、126、Gmail 以及 [更多](https://nodemailer.com/smtp/well-known/#supported-services)。 --- *如这里没有你使用的邮件提供商，请查看[自定义邮件服务器](/高级配置.md#自定义邮件服务器)*
@@ -31,7 +26,10 @@ ADMIN_URL | https://xxx.leanapp.cn/ | [建议] Web主机二级域名，用于自
 TO_EMAIL  | xxxxx@gmail.com | [可选] 指定站长收信邮箱，默认值为`SITE_USER`。用于 SMTP 发件人与站长收件人不一致的情况下使用。
 TEMPLATE_NAME | rainbow | [可选] 通知邮件的模板（default和rainbow），参考高级功能
 
-</div>
+5. 点击 `云引擎 -> 部署`，选择`Git源码部署`，分支或版本号输入`master`，下载最新依赖（可选），部署
+![Git](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/img/20200207143035.png)
+![master](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/img/20200207143205.png)
+
 
 ## 后台管理
 1. 点击 `云引擎 -> 设置`，在`Web主机域名`位置点击`申请`，获取二级域名，现在的二级域名不支持自定义，如果想好记请参考高级功能
