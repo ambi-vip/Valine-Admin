@@ -102,3 +102,6 @@ TEMPLATE_NAME | rainbow | [可选] 通知邮件的模板（default和rainbow）�
 
 
 **注：本项目修改于 panjunwen 的项目 : [Valine-Admin](https://github.com/panjunwen/Valine-Admin) (部分逻辑于功能不同，还请读者不要搞混配置项.)**
+
+# 其他
+[配合 Valine 评论系统使用的 Valine-Admin 及显示个性头像](https://blog.csdn.net/z_johnny/article/details/104211572)
