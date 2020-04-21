@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f50c7c4-9e51-40dc-ae00-8608d507b3d1" name="Default Changelist" comment="first conmmit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.leanignore" beforeDir="false" afterPath="$PROJECT_DIR$/.leanignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/send-mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/send-mail.js" afterDir="false" />
+    <list default="true" id="4f50c7c4-9e51-40dc-ae00-8608d507b3d1" name="Default Changelist" comment="修改邮件通知时，点击链接到对于位置">
+      <changelist_data name="Ambi" email="1277518148@qq.com" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587436912914</updated>
       <workItem from="1587436914344" duration="242000" />
-      <workItem from="1587437162751" duration="811000" />
+      <workItem from="1587437162751" duration="1130000" />
     </task>
     <task id="LOCAL-00001" summary="first conmmit">
       <created>1587437215050</created>
@@ -68,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587437215050</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改邮件通知时，点击链接到对于位置">
+      <created>1587438199980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587438199980</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,7 +94,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first conmmit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first conmmit" />
+    <MESSAGE value="修改邮件通知时，点击链接到对于位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改邮件通知时，点击链接到对于位置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587437156820">
