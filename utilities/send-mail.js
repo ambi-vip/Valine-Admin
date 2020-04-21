@@ -16,7 +16,7 @@ if (process.env.SMTP_SERVICE != null) {
 } else {
     config.host = process.env.SMTP_HOST;
     config.port = parseInt(process.env.SMTP_PORT);
-    config.secure = process.env.SMTP_SECURE === "false" ? false : true;
+    config.secure = process.env.SMTP_SECURE !== "false";
 }
 
 const transporter = nodemailer.createTransport(config);
@@ -40,7 +40,7 @@ exports.notice = (comment) => {
                             siteUrl: process.env.SITE_URL,
                             name: comment.get('nick'),
                             text: comment.get('comment'),
-                            url: process.env.SITE_URL + comment.get('url')
+                            url: process.env.SITE_URL + comment.get('url')+ '#' + comment.get('pid')
                         });
 
     let mailOptions = {
@@ -56,7 +56,7 @@ exports.notice = (comment) => {
         }
         comment.set('isNotified', true);
         comment.save();
-        console.log("收到一条评论, 已提醒站长");
+        console.log('AT通知邮件成功发送: %s', info.response);
     });
 }
 
@@ -93,7 +93,7 @@ exports.send = (currentComment, parentComment)=> {
         }
         currentComment.set('isNotified', true);
         currentComment.save();
-        console.log(currentComment.get('nick') + " @了" + parentComment.get('nick') + ", 已通知.");
+        console.log(currentComment.get('nick') + " @了" + parentComment.get('nick') + ", 已通知.",info.response);
     });
 };
 
@@ -105,5 +105,8 @@ exports.verify = function(){
             console.log(error);
         }
         console.log("Server is ready to take our messages");
+        if (success) {
+            console.log("SMTP邮箱配置正常！");
+        }
     });    
 };
